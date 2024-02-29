@@ -4,6 +4,7 @@ load_dotenv()
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 ADMINS = getenv("ADMINS")
+ADMINS = ADMINS.split(", ")
 DB_URL = getenv("DB_URL")
 DB_NAME = getenv("DB_NAME")
 DB_PASS = getenv("DB_PASS")
