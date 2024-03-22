@@ -3,9 +3,9 @@ from logging import basicConfig, INFO
 from sys import stdout
 
 import handlers, utils 
-from config import BOT_TOKEN
-from loader import dp, bot
-from utils.helpers import start_bot, stop_bot
+from data.config import BOT_TOKEN
+from data.loader import dp, bot
+from utils.misc.helpers import start_bot, stop_bot
 
 
 

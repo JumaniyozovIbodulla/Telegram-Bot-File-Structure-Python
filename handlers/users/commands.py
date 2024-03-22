@@ -1,7 +1,7 @@
 from aiogram.filters import CommandStart
 from aiogram.utils.markdown import hbold
 from aiogram import types
-from loader import dp
+from data.loader import dp
 
 
 @dp.message(CommandStart())

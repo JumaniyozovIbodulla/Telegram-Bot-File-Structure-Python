@@ -1,5 +1,5 @@
 from aiogram import Bot
-from config import ADMINS
+from data.config import ADMINS
 
 
 async def start_bot(bot: Bot) -> None:
@@ -12,7 +12,8 @@ async def start_bot(bot: Bot) -> None:
             await bot.send_message(chat_id=admin, text="Bot is working ✅")
         
         except:
-            ...
+            
+            raise Exception("Chat not found")
 
 
 async def stop_bot(bot: Bot):
@@ -26,4 +27,5 @@ async def stop_bot(bot: Bot):
             await bot.send_message(chat_id=admin, text="Bot is stopped 🛑")
         
         except:
-            ...
+
+            raise Exception("Chat not found")

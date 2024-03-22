@@ -1,4 +1,4 @@
-from config import BOT_TOKEN
+from data.config import BOT_TOKEN
 from aiogram import Bot, Dispatcher, Router
 from aiogram.enums import ParseMode
 
